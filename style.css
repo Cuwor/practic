@@ -8,15 +8,6 @@ body {
   margin: 0 auto;
 }
 
-#notRegged {
+#regged {
   display: none;
-}
-
-.logined {
-  display: inline-block;
-  float: right;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  font-weight: bold;
 }
