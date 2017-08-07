@@ -8,7 +8,13 @@ body {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 
+=======
+.container {
+  width: 1300px;
+}
+>>>>>>> df076abc707f55d1d85ba9dc6dac6d1280b8cbb5
 #notRegged {
   display: none;
 }
