@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1300, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <title>Practic</title>
 </head>
+
 <body>
-  <h1>Hello, SibDev! :D</h1>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li><a href="#" onclick="showReg()">Блог</a></li>
+          <li><a href="#">Не блог</a></li>
+          <div class="logined">
+            <div id="regged" class="col-md-12 text-uppercase">зашел</div>
+            <div id="notRegged" class="col-md-12 text-uppercase">не зашел</div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-justify">тут кароч рекламу бахнем , бабосы рубить будем или разделов с метками разными напихаем</div>
+      <div class="col-md-9 text-justify">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quas reprehenderit, maxime sunt cumque in fugit quos, autem labore asperiores dolorum ex provident sapiente facere quod. Sequi sunt voluptatum non!</div>
+        <div>Commodi quos mollitia et nesciunt expedita sunt reprehenderit facilis, minus accusantium optio iste, nisi sit iure voluptates incidunt soluta eveniet, a ipsam? Minus minima enim, eos quasi aperiam, architecto sapiente?</div>
+        <div>Voluptates iusto vero incidunt explicabo at officiis praesentium ipsam accusamus, et laboriosam quos sapiente? Magnam eius enim odit tenetur nostrum eaque illum id quae eligendi temporibus. Hic ratione necessitatibus iste!</div>
+        <div>Voluptas quasi nihil sequi, eum aliquid consequatur quaerat. Harum velit quisquam illum dolorum sed ea natus ullam minus numquam corporis! Nisi culpa quaerat dolores natus, id ducimus iure dicta optio!</div>
+        <div>Exercitationem saepe delectus corporis tempore, nesciunt expedita voluptatibus autem maiores commodi, ipsam minus laborum qui est eos aspernatur, quos. Id sequi amet, dolore ut at ipsum quia provident sunt ipsa.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <h1>2017</h1>
+    <h1>Practic site</h1>
+  </footer>
 </body>
+<script type="text/javascript">
+  var visible = true;
+
+  function showReg() {
+    if (visible) {
+      document.getElementById('regged').style.display = "none";
+
+      document.getElementById('notRegged').style.display = "block";
+      visible = false;
+    } else {
+      document.getElementById('regged').style.display = "block";
+
+      document.getElementById('notRegged').style.display = "none";
+      visible = true;
+    }
+  }
+</script>
+
 </html>

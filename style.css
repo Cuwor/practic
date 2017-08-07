@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#notRegged {
+  display: none;
+}
+
+.logined {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-weight: bold;
+}
