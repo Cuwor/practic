@@ -11,3 +11,13 @@ body {
 #regged {
   display: none;
 }
+
+.container form {
+  margin-top: 100px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.container form input{
+  margin-top: 10px;
+}
