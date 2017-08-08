@@ -11,6 +11,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>Новая статья</title>
 </head>
+
 <body>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -38,25 +39,30 @@
     </div>
   </nav>
   <div class="container">
+    <h1>Новая статья</h1>
     <form role="form" class="" action="index.html" method="post">
-      <div class="">
-        <div class="form-group">
-          <label>Заголовок:</label>
-          <input required type="text" class="form-control" placeholder="Введите заголовок">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label>Заголовок:</label>
+            <input required type="text" class="form-control" placeholder="Введите заголовок">
+          </div>
+          <div class="form-group">
+            <label>Описание:</label>
+            <textarea required type="text" class="form-control" placeholder="Введите описание"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Текст:</label>
+            <textarea type="text" class="form-control" placeholder="Введите текст"></textarea>
+          </div>
+          <input type="submit" class="btn btn-success" name="" value="Опубликовать">
         </div>
-        <div class="form-group">
-          <label>Описание:</label>
-          <textarea required type="text" class="form-control" placeholder="Введите описание"></textarea>
-        </div>
-        <div class="form-group">
-          <label>Текст:</label>
-          <textarea type="text" class="form-control" placeholder="Введите текст"></textarea>
-        </div>
-        <input type="submit" class="btn btn-success" name="" value="Опубликовать">
       </div>
     </form>
-    <footer class="text-left">
-      <hr> 2017 Practic site
+    <footer class="container">
+      <div class="row">
+        <hr> 2017 Practic site
+      </div>
     </footer>
   </div>
 </body>
