@@ -21,7 +21,7 @@
           <li><a href="#" onclick="showReg()">Practic</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a href="#">Блог</a></li>
+          <li><a href="index.html">Блог</a></li>
           <li><a href="#">Не блог</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -43,15 +43,20 @@
       <h1 class="col-sm-12">Авторизация</h1>
     </div>
     <div class="row">
+
+    </div>
+
+    <div class="row">
       <div class="col-lg-4 col-sm-12">
         <form role="form" action="index.html" method="post">
+          <div class="alert alert-danger">Неверный логин или пароль</div>
           <div class="form-group">
             <label for="inputEmail">Адрес email:</label>
-            <input required type="email" class="form-control input-lg" placeholder="Введите email">
+            <input required type="email" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="Введите email">
           </div>
           <div class="form-group">
             <label for="inputPassword">Пароль:</label>
-            <input required type="password" class="form-control input-lg" placeholder="Введите пароль">
+            <input required type="password" pattern="[A-Za-z0-9_-]{4,12}" class="form-control input-lg" placeholder="Введите пароль">
           </div>
           <button type="submit" class="btn btn-success btn-lg">Войти</button>
         </form>
